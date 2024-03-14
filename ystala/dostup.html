@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
+    <title>WhiteCloud</title>
+</head>
+<body>
+  
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+        <a class="navbar-brand text-info" href="#">WhiteCloud</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="/account.html">Мои файлы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/account.html">Доступ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Выйти</a>
+          </li>
+          <li class="nav-item dropdown">
+            <label for="formFile" class="form-label"><a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Загрузить файл</a>
+          </li>
+        </ul>
+      </nav>
+
+
+      <h1 class="text-center mt-5 text-info"></h1>
+
+ <h2 class="mb-5">Доступно для:</h2>
+      
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+            <th scope="col">Dostup</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+            <th scope="col"><button type="button" class="btn btn-danger">Удалить</button></th>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+            <th scope="col"><button type="button" class="btn btn-danger">Удалить</button></th>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+            <th scope="col"><button type="button" class="btn btn-danger">Удалить</button></th>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <form class="needs-validation" novalidate>
+        <h3>Добавить пользователя:</h3>
+        <div class="mb-3">
+          <input type="email" placeholder="email" class="form-control" id="validationCustom03" required>
+            <div class="invalid-feedback">
+              Пожалуйста заполните это поле
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Добавить</button>
+      </form>
+
+
+      <script src="/form.js"></script>
+      <script src="/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
