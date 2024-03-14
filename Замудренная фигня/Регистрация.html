@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Файлики</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3b3c3d;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/Регистрация.html">Файлики</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav p-2">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/Регистрация.html">Регистрация</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Авторизация.html">Вход</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Загрузка файлов.html">Загрузка файлов</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Редактирование файлов.html">Редактирование файла</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Права доступа.html">Права доступа для файлов</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Список файлов.html">Список файлов</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Список файлов с доступом.html">Список файлов с доступом</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <div class="m-5">
+        <form action="/Авторизация.html">
+            <div class="mb-5">
+                <label for="text" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="exampleInputtext" aria-describedby="textHelp" required pattern="^[а-яА-Я]+$">
+                <div id="text" class="form-text ">
+                    Имя должно быть написано на кириллице.
+                </div>
+              </div>
+              <div class="mb-5">
+                <label for="text" class="form-label">Фамилия</label>
+                <input type="text" class="form-control" id="exampleInputtext" aria-describedby="textHelp" required pattern="^[а-яА-Я]+$">
+                <div id="text" class="form-text ">
+                  Фамилия должна быть написана на кириллице.
+                </div>
+              </div>
+              <div class="mb-5">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                <div id="text" class="form-text ">
+                  Email должен быть корректным и не использоваться раннее при регистрации на этом сайте.
+              </div>
+            </div>
+            <div class="mb-5">
+                <label for="inputPassword5" class="form-label">Пароль</label>
+                <input type="password" id="inputPassword5" class="form-control mb-3" aria-describedby="passwordHelpBlock" required minlength="8" maxlength="20" size="20" pattern="^[a-zA-Z]+$">
+                <div id="passwordHelpBlock" class="form-text ">
+                  Длина пароля должна быть 8-20 символов, содержать только латинские буквы и цифры.
+                </div>
+            </div>
+            
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+            </div>
+            <button type="submit" class="btn btn-secondary">Зарегистрироваться</button>
+        </form>
+    </div>
+    <script src="/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
