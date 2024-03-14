@@ -1,0 +1,30 @@
+h2{
+    justify-content: center;
+}
+
+.status { /*статус заявлений */
+    display: flex;
+    align-items: center;
+  }
+  
+  .red, .green { /*отклонить */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .green { /*принять */
+    background-color: green;
+  }
+
+button{
+    text-decoration: none;
+}
+svg {
+  cursor: pointer;
+  }

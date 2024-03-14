@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спиок файлов</title>
+    <link  rel="stylesheet" href="/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="/css/style.css"> 
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light top shadow-sm p-3 mb-5 bg-body rounded">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">Логотип</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Логотип</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/reg.html">Регистрация/Вход</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Файлы
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="/file.html">Загрузка файлов</a></li>
+                    <li><a class="dropdown-item" href="/list.html">Список файлов</a></li>
+                    <li><a class="dropdown-item" href="/listdost.html">Доступные файлы </a></li>
+                    <li><a class="dropdown-item" href="/redfile.html">Редактирование файлов </a></li>
+                    <li><a class="dropdown-item" href="/dostup.html">Права доступа</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Выход из аккаунта</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex ">
+                <input class="form-control me-2" type="search" placeholder="Очень важный и необходимый файл" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Поиск</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+  <div class="container mb-3">
+    <div class="row align-items-start" style="margin-bottom: 100px;">
+    <div class="col">
+        <div class="row">
+            <h2 class="text-center mb-4">Список доступных фалов</h2> <!-- Заголовок формы  -->
+            <div class="col-sm-6 mb-3">
+                <div class="card-body border border-dark">
+                    <h5 class="card-title">Имя файла</h5>
+                    <p class="card-text">Идентификатор
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-folder-symlink-fill mp-8" viewBox="0 0 16 16">
+                            <path d="M13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2l.04.87a2 2 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3M2.19 3q-.362.002-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293L7.586 3zm9.608 5.271-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742"/>
+                        </svg>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+                <div class="card-body border border-dark">
+                    <h5 class="card-title">Имя файла</h5>
+                    <p class="card-text">Идентификатор
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-folder-symlink-fill mp-8" viewBox="0 0 16 16">
+                            <path d="M13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2l.04.87a2 2 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3M2.19 3q-.362.002-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293L7.586 3zm9.608 5.271-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742"/>
+                        </svg>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+                <div class="card-body border border-dark">
+                    <h5 class="card-title">Имя файла</h5>
+                    <p class="card-text">Идентификатор
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-folder-symlink-fill mp-8" viewBox="0 0 16 16">
+                            <path d="M13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2l.04.87a2 2 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3M2.19 3q-.362.002-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293L7.586 3zm9.608 5.271-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742"/>
+                        </svg>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+                <div class="card-body border border-dark">
+                    <h5 class="card-title">Имя файла</h5>
+                    <p class="card-text">Идентификатор
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-folder-symlink-fill mp-8" viewBox="0 0 16 16">
+                            <path d="M13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2l.04.87a2 2 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3M2.19 3q-.362.002-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293L7.586 3zm9.608 5.271-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742"/>
+                        </svg>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+                <div class="card-body border border-dark">
+                    <h5 class="card-title">Имя файла</h5>
+                    <p class="card-text">Идентификатор
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-folder-symlink-fill mp-8" viewBox="0 0 16 16">
+                            <path d="M13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2l.04.87a2 2 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3M2.19 3q-.362.002-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293L7.586 3zm9.608 5.271-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742"/>
+                        </svg>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+                <div class="card-body border border-dark">
+                    <h5 class="card-title">Имя файла</h5>
+                    <p class="card-text">Идентификатор
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-folder-symlink-fill mp-8" viewBox="0 0 16 16">
+                            <path d="M13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2l.04.87a2 2 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3M2.19 3q-.362.002-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293L7.586 3zm9.608 5.271-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742"/>
+                        </svg>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+                <div class="card-body border border-dark">
+                    <h5 class="card-title">Имя файла</h5>
+                    <p class="card-text">Идентификатор
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-folder-symlink-fill mp-8" viewBox="0 0 16 16">
+                            <path d="M13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2l.04.87a2 2 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3M2.19 3q-.362.002-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293L7.586 3zm9.608 5.271-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742"/>
+                        </svg>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+                <div class="card-body border border-dark">
+                    <h5 class="card-title">Имя файла</h5>
+                    <p class="card-text">Идентификатор
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-folder-symlink-fill mp-8" viewBox="0 0 16 16">
+                            <path d="M13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2l.04.87a2 2 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3M2.19 3q-.362.002-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293L7.586 3zm9.608 5.271-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742"/>
+                        </svg>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+                <div class="card-body border border-dark">
+                    <h5 class="card-title">Имя файла</h5>
+                    <p class="card-text">Идентификатор
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-folder-symlink-fill mp-8" viewBox="0 0 16 16">
+                            <path d="M13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2l.04.87a2 2 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3M2.19 3q-.362.002-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293L7.586 3zm9.608 5.271-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742"/>
+                        </svg>
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+                <div class="card-body border border-dark">
+                    <h5 class="card-title">Имя файла</h5>
+                    <p class="card-text">Идентификатор
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-folder-symlink-fill mp-8" viewBox="0 0 16 16">
+                            <path d="M13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2l.04.87a2 2 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3M2.19 3q-.362.002-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293L7.586 3zm9.608 5.271-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742"/>
+                        </svg>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <nav aria-label="Page navigation example mb-3">
+            <ul class="pagination justify-content-center">
+              <li class="page-item disabled">
+                <a class="page-link border-dark">Назад</a>
+              </li>
+              <li class="page-item"><a class="page-link border-dark" href="#">1</a></li>
+              <li class="page-item"><a class="page-link border-dark" href="#">2</a></li>
+              <li class="page-item"><a class="page-link border-dark" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link border-dark" href="#">Далее</a>
+              </li>
+            </ul>
+        </nav>
+  </div>
+  </div>
+ 
+
+    <!-- Подвал -->
+    <div class="container-fluid fixed-bottom navbar-dark p-3 bg-secondary text-white" >
+      <ul class="nav justify-content-center" >
+          <li class="nav-item" >
+            <a  class="nav-link active" aria-current="page" href="index.html" style="color: white;">Логотип</a>
+          </li>
+      </ul>
+  </div>
+
+  <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
